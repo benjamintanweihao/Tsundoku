@@ -75,16 +75,21 @@ class BarcodeScannerViewController : UIViewController, AVCaptureMetadataOutputOb
             let barcodeReadable = barcodeData as? AVMetadataMachineReadableCodeObject
             if let readableCode = barcodeReadable {
                 print("*** BARCODE ***")
-                print(readableCode.stringValue)
                 
-                let alert = UIAlertController(title: "Add to Library?", message: readableCode.stringValue, preferredStyle: .alert)
+                let readableCodeEntry = readableCode.stringValue
+                
+                print(readableCodeEntry)
+                
+                let alert = UIAlertController(title: "Add to Library?", message: readableCodeEntry, preferredStyle: .alert)
                 // TODO: Search Amazon for more information
                 alert.addAction(UIAlertAction(title: "Cancel", style: .default) { (action) in
                     _ = self.navigationController?.popViewController(animated: true)
                 })
                 
                 alert.addAction(UIAlertAction(title: "OK", style: .default) { (action) in
-                    self.performSegue(withIdentifier: "tableViewSegue", sender: self)
+                    let libraryVC = self.storyboard?.instantiateViewController(withIdentifier: "LibraryViewController") as! LibraryViewController
+                    libraryVC.barcodeEntry = readableCodeEntry
+                    self.navigationController?.pushViewController(libraryVC, animated: true)
                 })
                 
                 self.present(alert, animated: true, completion: nil)
