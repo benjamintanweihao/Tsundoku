@@ -14,6 +14,7 @@
 		B55AA7DF1DDED62F0033AB16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B55AA7DD1DDED62F0033AB16 /* LaunchScreen.storyboard */; };
 		B55AA7EA1DDED6300033AB16 /* TsundokuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA7E91DDED6300033AB16 /* TsundokuTests.swift */; };
 		B55AA7F51DDED6300033AB16 /* TsundokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA7F41DDED6300033AB16 /* TsundokuUITests.swift */; };
+		B55AA8031DDEDF880033AB16 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA8021DDEDF880033AB16 /* BarcodeScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B55AA7F01DDED6300033AB16 /* TsundokuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsundokuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55AA7F41DDED6300033AB16 /* TsundokuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsundokuUITests.swift; sourceTree = "<group>"; };
 		B55AA7F61DDED6300033AB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55AA8021DDEDF880033AB16 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				B55AA7DB1DDED62F0033AB16 /* Assets.xcassets */,
 				B55AA7DD1DDED62F0033AB16 /* LaunchScreen.storyboard */,
 				B55AA7E01DDED62F0033AB16 /* Info.plist */,
+				B55AA8021DDEDF880033AB16 /* BarcodeScannerViewController.swift */,
 			);
 			path = Tsundoku;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					B55AA7D01DDED62F0033AB16 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BVZYXK966R;
 						ProvisioningStyle = Automatic;
 					};
 					B55AA7E41DDED6300033AB16 = {
@@ -261,6 +265,7 @@
 			files = (
 				B55AA7D71DDED62F0033AB16 /* ViewController.swift in Sources */,
 				B55AA7D51DDED62F0033AB16 /* AppDelegate.swift in Sources */,
+				B55AA8031DDEDF880033AB16 /* BarcodeScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BVZYXK966R;
 				INFOPLIST_FILE = Tsundoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Tsundoku;
@@ -424,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BVZYXK966R;
 				INFOPLIST_FILE = Tsundoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Tsundoku;
