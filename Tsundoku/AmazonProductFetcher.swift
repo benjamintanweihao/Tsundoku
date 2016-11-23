@@ -69,7 +69,7 @@ class AmazonProductFetcher {
     func generateSignature(withParams params: String) throws -> String {
         var stringToSign =
             "GET\nwebservices.amazon.com\n/onca/xml\n" + params
-        let key = Constants.Credentials.awsSecretKey.utf8.map {$0}
+        let key = Credentials.awsSecretKey.utf8.map {$0}
         let bytes = stringToSign.utf8.map {$0}
         let hmac = try HMAC(key: key, variant: .sha256).authenticate(bytes)
         
