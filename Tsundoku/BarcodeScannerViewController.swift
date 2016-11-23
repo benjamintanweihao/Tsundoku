@@ -42,7 +42,7 @@ class BarcodeScannerViewController : UIViewController, AVCaptureMetadataOutputOb
             metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             
             // Set barcode type for which to scan: EAN 13
-            metadataOutput.metadataObjectTypes = [AVMetadataObjectTypeEAN13Code, AVMetadataObjectTypeQRCode]
+            metadataOutput.metadataObjectTypes = [AVMetadataObjectTypeEAN13Code]
         } else {
             scanningNotPossible()
         }

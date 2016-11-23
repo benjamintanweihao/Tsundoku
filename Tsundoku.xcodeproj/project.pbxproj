@@ -16,6 +16,17 @@
 		B55AA7F51DDED6300033AB16 /* TsundokuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA7F41DDED6300033AB16 /* TsundokuUITests.swift */; };
 		B55AA8031DDEDF880033AB16 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA8021DDEDF880033AB16 /* BarcodeScannerViewController.swift */; };
 		B55AA8051DDEF73D0033AB16 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA8041DDEF73D0033AB16 /* LibraryViewController.swift */; };
+		B55AA8081DE290FB0033AB16 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55AA8071DE290FB0033AB16 /* Alamofire.framework */; };
+		B55AA80B1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA80A1DE2959B0033AB16 /* AmazonProductFetcher.swift */; };
+		B55AA80C1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55AA80A1DE2959B0033AB16 /* AmazonProductFetcher.swift */; };
+		B55AA80D1DE296420033AB16 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55AA8071DE290FB0033AB16 /* Alamofire.framework */; };
+		B55AA8151DE2DC150033AB16 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B55AA8101DE2D9910033AB16 /* CryptoSwift.framework */; };
+		B55AA8161DE2DC150033AB16 /* CryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B55AA8101DE2D9910033AB16 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5676F101DE42CAF0063DF9C /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F0E1DE42AC70063DF9C /* SWXMLHash.framework */; };
+		B5676F111DE42CAF0063DF9C /* SWXMLHash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F0E1DE42AC70063DF9C /* SWXMLHash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5676F151DE537780063DF9C /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */; };
+		B5676F1B1DE548890063DF9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1A1DE548890063DF9C /* Constants.swift */; };
+		B5676F1D1DE54D0E0063DF9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1A1DE548890063DF9C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B55AA8171DE2DC150033AB16 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B5676F111DE42CAF0063DF9C /* SWXMLHash.framework in Embed Frameworks */,
+				B55AA8161DE2DC150033AB16 /* CryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B55AA7D11DDED62F0033AB16 /* Tsundoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsundoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55AA7D41DDED62F0033AB16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +77,13 @@
 		B55AA7F61DDED6300033AB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B55AA8021DDEDF880033AB16 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		B55AA8041DDEF73D0033AB16 /* LibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		B55AA8071DE290FB0033AB16 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		B55AA80A1DE2959B0033AB16 /* AmazonProductFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonProductFetcher.swift; sourceTree = "<group>"; };
+		B55AA80E1DE2C80D0033AB16 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Carthage/Build/iOS/AWSCore.framework; sourceTree = "<group>"; };
+		B55AA8101DE2D9910033AB16 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		B5676F0E1DE42AC70063DF9C /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
+		B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
+		B5676F1A1DE548890063DF9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55AA8081DE290FB0033AB16 /* Alamofire.framework in Frameworks */,
+				B55AA8151DE2DC150033AB16 /* CryptoSwift.framework in Frameworks */,
+				B5676F101DE42CAF0063DF9C /* SWXMLHash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55AA80D1DE296420033AB16 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +122,7 @@
 				B55AA7E81DDED6300033AB16 /* TsundokuTests */,
 				B55AA7F31DDED6300033AB16 /* TsundokuUITests */,
 				B55AA7D21DDED62F0033AB16 /* Products */,
+				B55AA8061DE290FB0033AB16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +147,9 @@
 				B55AA7E01DDED62F0033AB16 /* Info.plist */,
 				B55AA8021DDEDF880033AB16 /* BarcodeScannerViewController.swift */,
 				B55AA8041DDEF73D0033AB16 /* LibraryViewController.swift */,
+				B55AA80A1DE2959B0033AB16 /* AmazonProductFetcher.swift */,
+				B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */,
+				B5676F1A1DE548890063DF9C /* Constants.swift */,
 			);
 			path = Tsundoku;
 			sourceTree = "<group>";
@@ -131,6 +172,17 @@
 			path = TsundokuUITests;
 			sourceTree = "<group>";
 		};
+		B55AA8061DE290FB0033AB16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5676F0E1DE42AC70063DF9C /* SWXMLHash.framework */,
+				B55AA8101DE2D9910033AB16 /* CryptoSwift.framework */,
+				B55AA80E1DE2C80D0033AB16 /* AWSCore.framework */,
+				B55AA8071DE290FB0033AB16 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +193,8 @@
 				B55AA7CD1DDED62F0033AB16 /* Sources */,
 				B55AA7CE1DDED62F0033AB16 /* Frameworks */,
 				B55AA7CF1DDED62F0033AB16 /* Resources */,
+				B55AA8091DE2911D0033AB16 /* ShellScript */,
+				B55AA8171DE2DC150033AB16 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,11 +258,13 @@
 					};
 					B55AA7E41DDED6300033AB16 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BVZYXK966R;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B55AA7D01DDED62F0033AB16;
 					};
 					B55AA7EF1DDED6300033AB16 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BVZYXK966R;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B55AA7D01DDED62F0033AB16;
 					};
@@ -261,15 +317,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B55AA8091DE2911D0033AB16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B55AA7CD1DDED62F0033AB16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B55AA7D71DDED62F0033AB16 /* ViewController.swift in Sources */,
+				B55AA80B1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
 				B55AA7D51DDED62F0033AB16 /* AppDelegate.swift in Sources */,
 				B55AA8051DDEF73D0033AB16 /* LibraryViewController.swift in Sources */,
+				B5676F1B1DE548890063DF9C /* Constants.swift in Sources */,
 				B55AA8031DDEDF880033AB16 /* BarcodeScannerViewController.swift in Sources */,
+				B5676F151DE537780063DF9C /* LibraryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +354,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55AA7EA1DDED6300033AB16 /* TsundokuTests.swift in Sources */,
+				B55AA80C1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
+				B5676F1D1DE54D0E0063DF9C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +500,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BVZYXK966R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tsundoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Tsundoku;
@@ -435,6 +517,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BVZYXK966R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Tsundoku/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.Tsundoku;
@@ -448,6 +534,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BVZYXK966R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TsundokuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.TsundokuTests;
@@ -462,6 +553,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BVZYXK966R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TsundokuTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.TsundokuTests;
@@ -475,6 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BVZYXK966R;
 				INFOPLIST_FILE = TsundokuUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.TsundokuUITests;
@@ -488,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = BVZYXK966R;
 				INFOPLIST_FILE = TsundokuUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.pivotal.TsundokuUITests;
@@ -516,6 +614,7 @@
 				B55AA7FB1DDED6300033AB16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B55AA7FC1DDED6300033AB16 /* Build configuration list for PBXNativeTarget "TsundokuTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +623,7 @@
 				B55AA7FE1DDED6300033AB16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B55AA7FF1DDED6300033AB16 /* Build configuration list for PBXNativeTarget "TsundokuUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +632,7 @@
 				B55AA8011DDED6300033AB16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

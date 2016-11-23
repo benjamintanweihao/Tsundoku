@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -75,27 +76,53 @@
         <scene sceneID="Qaw-dA-tdn">
             <objects>
                 <tableViewController storyboardIdentifier="LibraryViewController" id="xN6-1n-Ji8" customClass="LibraryViewController" customModule="Tsundoku" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Tm-9f-vuQ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" id="8Tm-9f-vuQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="oDE-Xf-8Gl" style="IBUITableViewCellStyleDefault" id="sQr-Bj-beL">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="sQr-Bj-beL" customClass="LibraryTableViewCell" customModule="Tsundoku" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sQr-Bj-beL" id="MR4-Wm-Sn0">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oDE-Xf-8Gl">
-                                            <frame key="frameInset" minX="15" width="345" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-CO-5RM">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="fvm-Fa-4Dy"/>
+                                                <constraint firstAttribute="width" constant="90" id="hyb-qu-V76"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W77-nP-vld">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oE-wn-z8z">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="269" id="qh2-PL-5Dq"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2oE-wn-z8z" firstAttribute="trailing" secondItem="MR4-Wm-Sn0" secondAttribute="trailingMargin" id="Eal-iC-7I1"/>
+                                        <constraint firstItem="2oE-wn-z8z" firstAttribute="top" secondItem="MR4-Wm-Sn0" secondAttribute="topMargin" constant="-3" id="HNJ-c2-8Hw"/>
+                                        <constraint firstItem="W77-nP-vld" firstAttribute="centerY" secondItem="hGp-CO-5RM" secondAttribute="centerY" id="HpI-Tt-MXh"/>
+                                        <constraint firstItem="2oE-wn-z8z" firstAttribute="leading" secondItem="hGp-CO-5RM" secondAttribute="trailing" constant="8" symbolic="YES" id="dGw-Md-OTn"/>
+                                        <constraint firstItem="W77-nP-vld" firstAttribute="trailing" secondItem="2oE-wn-z8z" secondAttribute="trailing" id="qAr-zh-Jxq"/>
+                                        <constraint firstItem="W77-nP-vld" firstAttribute="top" secondItem="2oE-wn-z8z" secondAttribute="bottom" constant="8" symbolic="YES" id="s2f-5m-bPk"/>
+                                        <constraint firstItem="W77-nP-vld" firstAttribute="leading" secondItem="2oE-wn-z8z" secondAttribute="leading" id="wLB-WX-BVZ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="authorLabel" destination="W77-nP-vld" id="e7R-pA-fg4"/>
+                                    <outlet property="bookImage" destination="hGp-CO-5RM" id="B2P-VP-cRJ"/>
+                                    <outlet property="titleLabel" destination="2oE-wn-z8z" id="woq-jC-HtJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -106,7 +133,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BpI-yH-ERa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-810" y="141"/>
+            <point key="canvasLocation" x="-810.39999999999998" y="139.880059970015"/>
         </scene>
     </scenes>
 </document>
