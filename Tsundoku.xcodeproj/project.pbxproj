@@ -27,6 +27,8 @@
 		B5676F151DE537780063DF9C /* LibraryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */; };
 		B5676F1B1DE548890063DF9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1A1DE548890063DF9C /* Constants.swift */; };
 		B5676F1D1DE54D0E0063DF9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1A1DE548890063DF9C /* Constants.swift */; };
+		B5676F1F1DE54EBF0063DF9C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1E1DE54EBF0063DF9C /* Credentials.swift */; };
+		B5676F201DE54EBF0063DF9C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1E1DE54EBF0063DF9C /* Credentials.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,7 @@
 		B5676F0E1DE42AC70063DF9C /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		B5676F1A1DE548890063DF9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5676F1E1DE54EBF0063DF9C /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +153,7 @@
 				B55AA80A1DE2959B0033AB16 /* AmazonProductFetcher.swift */,
 				B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */,
 				B5676F1A1DE548890063DF9C /* Constants.swift */,
+				B5676F1E1DE54EBF0063DF9C /* Credentials.swift */,
 			);
 			path = Tsundoku;
 			sourceTree = "<group>";
@@ -341,6 +345,7 @@
 			files = (
 				B55AA7D71DDED62F0033AB16 /* ViewController.swift in Sources */,
 				B55AA80B1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
+				B5676F1F1DE54EBF0063DF9C /* Credentials.swift in Sources */,
 				B55AA7D51DDED62F0033AB16 /* AppDelegate.swift in Sources */,
 				B55AA8051DDEF73D0033AB16 /* LibraryViewController.swift in Sources */,
 				B5676F1B1DE548890063DF9C /* Constants.swift in Sources */,
@@ -355,6 +360,7 @@
 			files = (
 				B55AA7EA1DDED6300033AB16 /* TsundokuTests.swift in Sources */,
 				B55AA80C1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
+				B5676F201DE54EBF0063DF9C /* Credentials.swift in Sources */,
 				B5676F1D1DE54D0E0063DF9C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
