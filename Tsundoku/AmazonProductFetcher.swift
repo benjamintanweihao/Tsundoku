@@ -49,8 +49,8 @@ class AmazonProductFetcher {
     }
     
     func generateParams(withISBN isbn: String) -> String {
-        return "AWSAccessKeyId=\(Constants.Credentials.awsAccessKeyId)" +
-            "&AssociateTag=\(Constants.Credentials.associateTag)" +
+        return "AWSAccessKeyId=\(Credentials.awsAccessKeyId)" +
+            "&AssociateTag=\(Credentials.associateTag)" +
             "&IdType=ISBN" +
             "&ItemId=\(isbn)" +
             "&Operation=ItemLookup" +
