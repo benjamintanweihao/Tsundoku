@@ -7,9 +7,8 @@ class AmazonProductFetcher {
     func fetch(isbn: String, onComplete: @escaping (AmazonBook) -> ()) throws {
         let url = try generateURL(withISBN: isbn)
     
-        
         Alamofire.request(url).response { response in
-            var amazonBook = AmazonBook()
+            let amazonBook = AmazonBook()
             
             let xml = SWXMLHash.parse(response.data!)
             let item = xml["ItemLookupResponse"]["Items"]["Item"][0]
@@ -30,7 +29,7 @@ class AmazonProductFetcher {
             amazonBook.smallImageURL = smallImage ?? ""
             amazonBook.mediumImageURL = mediumImage ?? ""
             amazonBook.largeImageURL = largeImage ?? ""
-            amazonBook.description = description ?? ""
+            amazonBook.descriptionContent = description ?? ""
             amazonBook.publisher = publisher ?? ""
             
             onComplete(amazonBook)
@@ -74,19 +73,6 @@ class AmazonProductFetcher {
         let hmac = try HMAC(key: key, variant: .sha256).authenticate(bytes)
         
         return NSData(bytes: hmac, length: hmac.count).base64EncodedString(options: .init(rawValue: 0))
-    }
-}
-
-struct AmazonBook {
-    var title: String = ""
-    var author: String = ""
-    var smallImageURL: String = ""
-    var mediumImageURL: String = ""
-    var largeImageURL: String = ""
-    var description: String = ""
-    var publisher: String = ""
-
-    init() {
     }
 }
 

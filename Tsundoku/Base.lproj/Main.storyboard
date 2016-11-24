@@ -7,36 +7,75 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Background Video View Controller-->
+        <scene sceneID="eAD-D0-xEl">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tsundoku" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vcC-TQ-TyJ" customClass="BackgroundVideoViewController" customModule="Tsundoku" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="0AF-fz-hL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="0tZ-Ww-P6C"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="9Ry-cy-jow">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x60-c3-oM2">
-                                <state key="normal" title="Scan Barcode"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyY-gf-o4J">
+                                <color key="backgroundColor" red="0.0" green="0.69411764705882351" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="r5E-Su-AdM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Scan Barcode">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <segue destination="lPa-X4-RgO" kind="show" id="CkX-aa-iqv"/>
+                                    <segue destination="lPa-X4-RgO" kind="show" id="vRL-Xj-4wS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofD-rQ-U2g">
+                                <color key="backgroundColor" red="0.0" green="0.69411764710000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="YoP-1t-2pe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Library">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xN6-1n-Ji8" kind="show" id="4oO-zv-4bi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="積ん読" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3A1-63-gbY">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="6hp-MH-Smo"/>
+                                    <constraint firstAttribute="width" constant="129" id="XqO-Yb-v0x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="x60-c3-oM2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OUg-Qj-eWw"/>
-                            <constraint firstItem="x60-c3-oM2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lVH-8m-eL5"/>
+                            <constraint firstItem="3A1-63-gbY" firstAttribute="centerX" secondItem="VyY-gf-o4J" secondAttribute="centerX" id="81w-XJ-wXy"/>
+                            <constraint firstItem="3A1-63-gbY" firstAttribute="centerX" secondItem="9Ry-cy-jow" secondAttribute="centerX" id="Hr8-RF-ZaZ"/>
+                            <constraint firstItem="0tZ-Ww-P6C" firstAttribute="top" secondItem="ofD-rQ-U2g" secondAttribute="bottom" constant="42" id="Lpb-8K-Ygk"/>
+                            <constraint firstItem="3A1-63-gbY" firstAttribute="top" secondItem="0AF-fz-hL8" secondAttribute="bottom" constant="8" symbolic="YES" id="SFa-TC-aZr"/>
+                            <constraint firstItem="ofD-rQ-U2g" firstAttribute="top" secondItem="VyY-gf-o4J" secondAttribute="bottom" constant="8" symbolic="YES" id="aRC-iu-miO"/>
+                            <constraint firstItem="VyY-gf-o4J" firstAttribute="trailing" secondItem="ofD-rQ-U2g" secondAttribute="trailing" id="gtW-Hg-8JP"/>
+                            <constraint firstItem="VyY-gf-o4J" firstAttribute="leading" secondItem="9Ry-cy-jow" secondAttribute="leadingMargin" id="luC-vM-41h"/>
+                            <constraint firstItem="VyY-gf-o4J" firstAttribute="leading" secondItem="ofD-rQ-U2g" secondAttribute="leading" id="rxe-Mm-cyc"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i8M-Zd-3TD"/>
+                    <navigationItem key="navigationItem" id="woa-sz-Eh8"/>
+                    <connections>
+                        <outlet property="libraryButton" destination="ofD-rQ-U2g" id="INa-Jb-iRI"/>
+                        <outlet property="scanBarcodeButton" destination="VyY-gf-o4J" id="axd-WH-1tg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPh-DJ-7Sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2" y="-588"/>
+            <point key="canvasLocation" x="-20" y="-591.45427286356824"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="shb-ly-ScW">
@@ -47,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ubo-Ez-CYZ"/>
+                        <segue destination="vcC-TQ-TyJ" kind="relationship" relationship="rootViewController" id="hny-Gv-u8z"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8DM-9V-DZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -82,7 +121,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="sQr-Bj-beL" customClass="LibraryTableViewCell" customModule="Tsundoku" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sQr-Bj-beL" id="MR4-Wm-Sn0">
                                     <frame key="frameInset" width="375" height="89"/>
@@ -133,7 +172,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BpI-yH-ERa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-810.39999999999998" y="139.880059970015"/>
+            <point key="canvasLocation" x="-20" y="131"/>
         </scene>
     </scenes>
 </document>

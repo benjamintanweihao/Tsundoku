@@ -1,4 +1,5 @@
 github "Alamofire/Alamofire" ~> 4.0
 github "krzyzanowskim/CryptoSwift" ~> 0.18.1
 github "drmohundro/SWXMLHash" ~> 3.0
+github "realm/realm-cocoa" ~> 2.1.0
 

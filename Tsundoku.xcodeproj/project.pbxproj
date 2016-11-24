@@ -29,6 +29,14 @@
 		B5676F1D1DE54D0E0063DF9C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1A1DE548890063DF9C /* Constants.swift */; };
 		B5676F1F1DE54EBF0063DF9C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1E1DE54EBF0063DF9C /* Credentials.swift */; };
 		B5676F201DE54EBF0063DF9C /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F1E1DE54EBF0063DF9C /* Credentials.swift */; };
+		B5676F261DE564EA0063DF9C /* AmazonBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F251DE564EA0063DF9C /* AmazonBook.swift */; };
+		B5676F271DE564EA0063DF9C /* AmazonBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F251DE564EA0063DF9C /* AmazonBook.swift */; };
+		B5676F281DE6A1700063DF9C /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F211DE564D00063DF9C /* Realm.framework */; };
+		B5676F291DE6A1700063DF9C /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F211DE564D00063DF9C /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5676F2A1DE6A1700063DF9C /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F221DE564D00063DF9C /* RealmSwift.framework */; };
+		B5676F2B1DE6A1700063DF9C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F221DE564D00063DF9C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5676F2F1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F2E1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift */; };
+		B5676F341DE6E0780063DF9C /* backgroundVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B5676F321DE6D9A70063DF9C /* backgroundVideo.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +63,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B5676F291DE6A1700063DF9C /* Realm.framework in Embed Frameworks */,
 				B5676F111DE42CAF0063DF9C /* SWXMLHash.framework in Embed Frameworks */,
+				B5676F2B1DE6A1700063DF9C /* RealmSwift.framework in Embed Frameworks */,
 				B55AA8161DE2DC150033AB16 /* CryptoSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -87,6 +97,11 @@
 		B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LibraryTableViewCell.swift; sourceTree = "<group>"; };
 		B5676F1A1DE548890063DF9C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5676F1E1DE54EBF0063DF9C /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		B5676F211DE564D00063DF9C /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		B5676F221DE564D00063DF9C /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		B5676F251DE564EA0063DF9C /* AmazonBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonBook.swift; sourceTree = "<group>"; };
+		B5676F2E1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVideoViewController.swift; sourceTree = "<group>"; };
+		B5676F321DE6D9A70063DF9C /* backgroundVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = backgroundVideo.mp4; path = Tsundoku/backgroundVideo.mp4; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5676F281DE6A1700063DF9C /* Realm.framework in Frameworks */,
+				B5676F2A1DE6A1700063DF9C /* RealmSwift.framework in Frameworks */,
 				B55AA8081DE290FB0033AB16 /* Alamofire.framework in Frameworks */,
 				B55AA8151DE2DC150033AB16 /* CryptoSwift.framework in Frameworks */,
 				B5676F101DE42CAF0063DF9C /* SWXMLHash.framework in Frameworks */,
@@ -145,6 +162,7 @@
 				B55AA7D41DDED62F0033AB16 /* AppDelegate.swift */,
 				B55AA7D61DDED62F0033AB16 /* ViewController.swift */,
 				B55AA7D81DDED62F0033AB16 /* Main.storyboard */,
+				B5676F321DE6D9A70063DF9C /* backgroundVideo.mp4 */,
 				B55AA7DB1DDED62F0033AB16 /* Assets.xcassets */,
 				B55AA7DD1DDED62F0033AB16 /* LaunchScreen.storyboard */,
 				B55AA7E01DDED62F0033AB16 /* Info.plist */,
@@ -154,6 +172,8 @@
 				B5676F141DE537780063DF9C /* LibraryTableViewCell.swift */,
 				B5676F1A1DE548890063DF9C /* Constants.swift */,
 				B5676F1E1DE54EBF0063DF9C /* Credentials.swift */,
+				B5676F251DE564EA0063DF9C /* AmazonBook.swift */,
+				B5676F2E1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift */,
 			);
 			path = Tsundoku;
 			sourceTree = "<group>";
@@ -179,6 +199,8 @@
 		B55AA8061DE290FB0033AB16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5676F211DE564D00063DF9C /* Realm.framework */,
+				B5676F221DE564D00063DF9C /* RealmSwift.framework */,
 				B5676F0E1DE42AC70063DF9C /* SWXMLHash.framework */,
 				B55AA8101DE2D9910033AB16 /* CryptoSwift.framework */,
 				B55AA80E1DE2C80D0033AB16 /* AWSCore.framework */,
@@ -251,6 +273,9 @@
 		B55AA7C91DDED62F0033AB16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					backgroundVideo,
+				);
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = pivotal;
@@ -299,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5676F341DE6E0780063DF9C /* backgroundVideo.mp4 in Resources */,
 				B55AA7DF1DDED62F0033AB16 /* LaunchScreen.storyboard in Resources */,
 				B55AA7DC1DDED62F0033AB16 /* Assets.xcassets in Resources */,
 				B55AA7DA1DDED62F0033AB16 /* Main.storyboard in Resources */,
@@ -346,6 +372,8 @@
 				B55AA7D71DDED62F0033AB16 /* ViewController.swift in Sources */,
 				B55AA80B1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
 				B5676F1F1DE54EBF0063DF9C /* Credentials.swift in Sources */,
+				B5676F261DE564EA0063DF9C /* AmazonBook.swift in Sources */,
+				B5676F2F1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift in Sources */,
 				B55AA7D51DDED62F0033AB16 /* AppDelegate.swift in Sources */,
 				B55AA8051DDEF73D0033AB16 /* LibraryViewController.swift in Sources */,
 				B5676F1B1DE548890063DF9C /* Constants.swift in Sources */,
@@ -359,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B55AA7EA1DDED6300033AB16 /* TsundokuTests.swift in Sources */,
+				B5676F271DE564EA0063DF9C /* AmazonBook.swift in Sources */,
 				B55AA80C1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
 				B5676F201DE54EBF0063DF9C /* Credentials.swift in Sources */,
 				B5676F1D1DE54D0E0063DF9C /* Constants.swift in Sources */,
