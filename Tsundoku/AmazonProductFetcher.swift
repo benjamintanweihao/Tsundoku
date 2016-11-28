@@ -23,7 +23,8 @@ class AmazonProductFetcher {
             
             let editorialReview = item["EditorialReviews"]["EditorialReview"]
             let description = editorialReview["Content"].element?.text
-                        
+            
+            amazonBook.isbn = isbn
             amazonBook.author = author ?? ""
             amazonBook.title = title ?? ""
             amazonBook.smallImageURL = smallImage ?? ""

@@ -16,16 +16,20 @@ class LibraryViewController: UITableViewController {
                     print(book)
                     
                     if (book.title.isEmpty || book.author.isEmpty || book.mediumImageURL.isEmpty) {
-                        self.showAlertDialog()
+                        self.showAlertDialog("Whoops", message: "Had a problem adding your book.")
                     } else {
-                        try! self.realm.write() {
-                            self.realm.add(book)
-                            self.tableView.reloadData()
+                        if self.realm.object(ofType: AmazonBook.self, forPrimaryKey: book.isbn) == nil {
+                            try! self.realm.write() {
+                                self.realm.add(book)
+                                self.tableView.reloadData()
+                            }
+                        } else {
+                            self.showAlertDialog("Whoops", message: "Book already exists.")
                         }
                     }
                 }
             } catch {
-                showAlertDialog()
+                showAlertDialog("Whoops", message: "Had a problem adding your book.")
             }
         }
     }
@@ -53,8 +57,8 @@ class LibraryViewController: UITableViewController {
         }
     }
     
-    func showAlertDialog() {
-        let alert = UIAlertController(title: "Whoops", message: "Had a problem adding your book.", preferredStyle: UIAlertControllerStyle.alert)
+    func showAlertDialog(_ title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
