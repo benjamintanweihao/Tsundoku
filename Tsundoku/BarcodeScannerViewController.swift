@@ -78,7 +78,7 @@ class BarcodeScannerViewController : UIViewController, AVCaptureMetadataOutputOb
                 
                 let readableCodeEntry = readableCode.stringValue
                 
-                print(readableCodeEntry)
+                print(readableCodeEntry!)
                 
                 let alert = UIAlertController(title: "Add to Library?", message: readableCodeEntry, preferredStyle: .alert)
                 // TODO: Search Amazon for more information

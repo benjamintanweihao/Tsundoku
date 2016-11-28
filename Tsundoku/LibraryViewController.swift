@@ -43,7 +43,16 @@ class LibraryViewController: UITableViewController {
         
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            try! self.realm.write() {
+                self.realm.delete(collection[indexPath.row])
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        }
+    }
+    
     func showAlertDialog() {
         let alert = UIAlertController(title: "Whoops", message: "Had a problem adding your book.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
