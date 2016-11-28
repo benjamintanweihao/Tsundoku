@@ -48,6 +48,19 @@ class LibraryViewController: UITableViewController {
         return cell
     }
     
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        
+//        self.performSegue(withIdentifier: "showBook", sender: indexPath)
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showBook") {
+            let controller = segue.destination as! AmazonBookViewController
+            controller.book = self.collection[(tableView.indexPathForSelectedRow?.row)!]
+        }
+    }
+    
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             try! self.realm.write() {

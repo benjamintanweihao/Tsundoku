@@ -37,6 +37,7 @@
 		B5676F2B1DE6A1700063DF9C /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5676F221DE564D00063DF9C /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B5676F2F1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5676F2E1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift */; };
 		B5676F341DE6E0780063DF9C /* backgroundVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B5676F321DE6D9A70063DF9C /* backgroundVideo.mp4 */; };
+		B5C5228D1DEBE363001B0796 /* AmazonBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C5228C1DEBE363001B0796 /* AmazonBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		B5676F251DE564EA0063DF9C /* AmazonBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonBook.swift; sourceTree = "<group>"; };
 		B5676F2E1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVideoViewController.swift; sourceTree = "<group>"; };
 		B5676F321DE6D9A70063DF9C /* backgroundVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = backgroundVideo.mp4; path = Tsundoku/backgroundVideo.mp4; sourceTree = SOURCE_ROOT; };
+		B5C5228C1DEBE363001B0796 /* AmazonBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmazonBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				B5676F1E1DE54EBF0063DF9C /* Credentials.swift */,
 				B5676F251DE564EA0063DF9C /* AmazonBook.swift */,
 				B5676F2E1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift */,
+				B5C5228C1DEBE363001B0796 /* AmazonBookViewController.swift */,
 			);
 			path = Tsundoku;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 			files = (
 				B55AA7D71DDED62F0033AB16 /* ViewController.swift in Sources */,
 				B55AA80B1DE2959B0033AB16 /* AmazonProductFetcher.swift in Sources */,
+				B5C5228D1DEBE363001B0796 /* AmazonBookViewController.swift in Sources */,
 				B5676F1F1DE54EBF0063DF9C /* Credentials.swift in Sources */,
 				B5676F261DE564EA0063DF9C /* AmazonBook.swift in Sources */,
 				B5676F2F1DE6D3BB0063DF9C /* BackgroundVideoViewController.swift in Sources */,

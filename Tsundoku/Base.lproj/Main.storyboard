@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wx6-uw-GCu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Wx6-uw-GCu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VyY-gf-o4J">
+                                <rect key="frame" x="16" y="511" width="343" height="53"/>
                                 <color key="backgroundColor" red="0.0" green="0.69411764705882351" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="r5E-Su-AdM"/>
@@ -33,6 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofD-rQ-U2g">
+                                <rect key="frame" x="16" y="572" width="343" height="53"/>
                                 <color key="backgroundColor" red="0.0" green="0.69411764710000001" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="YoP-1t-2pe"/>
@@ -46,6 +51,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="積ん読" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3A1-63-gbY">
+                                <rect key="frame" x="123" y="72" width="129" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="6hp-MH-Smo"/>
                                     <constraint firstAttribute="width" constant="129" id="XqO-Yb-v0x"/>
@@ -121,24 +127,27 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="sQr-Bj-beL" customClass="LibraryTableViewCell" customModule="Tsundoku" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sQr-Bj-beL" id="MR4-Wm-Sn0">
-                                    <frame key="frameInset" width="375" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-CO-5RM">
+                                            <rect key="frame" x="0.0" y="-1.5" width="90" height="90.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="90" id="fvm-Fa-4Dy"/>
                                                 <constraint firstAttribute="width" constant="90" id="hyb-qu-V76"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W77-nP-vld">
+                                            <rect key="frame" x="98" y="33.5" width="269" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oE-wn-z8z">
+                                            <rect key="frame" x="98" y="5" width="269" height="20.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="269" id="qh2-PL-5Dq"/>
                                             </constraints>
@@ -161,6 +170,7 @@
                                     <outlet property="authorLabel" destination="W77-nP-vld" id="e7R-pA-fg4"/>
                                     <outlet property="bookImage" destination="hGp-CO-5RM" id="B2P-VP-cRJ"/>
                                     <outlet property="titleLabel" destination="2oE-wn-z8z" id="woq-jC-HtJ"/>
+                                    <segue destination="owz-98-Cib" kind="show" identifier="showBook" id="DcK-JR-rOf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -173,6 +183,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BpI-yH-ERa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-20" y="131"/>
+        </scene>
+        <!--Amazon Book View Controller-->
+        <scene sceneID="HN8-rr-evj">
+            <objects>
+                <viewController id="owz-98-Cib" customClass="AmazonBookViewController" customModule="Tsundoku" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MC7-Bw-Rl0"/>
+                        <viewControllerLayoutGuide type="bottom" id="3YR-og-7hz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IhW-Ga-P7p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYG-lb-9p4">
+                                <rect key="frame" x="16" y="269" width="343" height="378"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFv-si-jFH">
+                                <rect key="frame" x="16" y="72" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7wG-In-aDZ"/>
+                                    <constraint firstAttribute="width" constant="150" id="J7I-A9-Ah1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VYG-lb-9p4" secondAttribute="bottom" constant="20" symbolic="YES" id="5ag-6U-wxu"/>
+                            <constraint firstItem="VYG-lb-9p4" firstAttribute="trailing" secondItem="IhW-Ga-P7p" secondAttribute="trailingMargin" id="Ril-wa-KWt"/>
+                            <constraint firstItem="cFv-si-jFH" firstAttribute="top" secondItem="MC7-Bw-Rl0" secondAttribute="bottom" constant="8" symbolic="YES" id="hX3-ty-gnE"/>
+                            <constraint firstItem="cFv-si-jFH" firstAttribute="leading" secondItem="IhW-Ga-P7p" secondAttribute="leadingMargin" id="mSy-M1-zvi"/>
+                            <constraint firstItem="VYG-lb-9p4" firstAttribute="top" secondItem="cFv-si-jFH" secondAttribute="bottom" constant="47" id="nv6-Dm-Zas"/>
+                            <constraint firstItem="cFv-si-jFH" firstAttribute="leading" secondItem="VYG-lb-9p4" secondAttribute="leading" id="pnJ-qU-f2X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookDescription" destination="VYG-lb-9p4" id="RO7-KJ-eQS"/>
+                        <outlet property="bookImage" destination="cFv-si-jFH" id="0hz-ca-Rhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiL-YG-GXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="130.88455772113943"/>
         </scene>
     </scenes>
 </document>
